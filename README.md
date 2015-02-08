@@ -44,6 +44,10 @@ The client-side compiler function to pass the template string into. If none is
 provided, the JavaScript module will export the template string without any
 compilation.
 
+#### precompile (optional)
+
+A function to use to precompile the template. Use instead of compileFunction.
+
 ## Caveats
 
 * Import statements are not yet supported. The `compileFunction` must be
