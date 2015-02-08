@@ -22,7 +22,7 @@ TemplateFilter.prototype.targetExtension = 'js';
 TemplateFilter.prototype.processString = function (string) {
     var retVal = 'export default ';
     if (this.options.precompile) {
-        retVal += this.options.precompile(string);
+        retVal += this.options.precompile(string, this.options.precompileOptions);
     } else {
         retVal += this.compileFunction;
         retVal += '("' + jsStringEscape(string) + '");';
