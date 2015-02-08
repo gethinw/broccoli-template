@@ -25,7 +25,7 @@ TemplateFilter.prototype.processString = function (string) {
         retVal += this.options.precompile(string);
     } else {
         retVal += this.compileFunction;
-        retval += '("' + jsStringEscape(string) + '");';
+        retVal += '("' + jsStringEscape(string) + '");';
     }
     return retVal + '\n';
 };
